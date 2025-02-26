@@ -1,0 +1,8 @@
+public class Test {
+	default void display() {
+		System.out.println("Default method.");
+	}
+	public static void main(String[] args) {
+		new Test().display();
+	}
+}

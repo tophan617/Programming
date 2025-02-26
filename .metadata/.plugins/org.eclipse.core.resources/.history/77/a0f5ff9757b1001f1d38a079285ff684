@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Ascii_code_Of_a_Digit {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("Enter a digit : ");
+		int n=scanner.nextInt();
+		System.out.println("\nFind ASCII code of a digit ");
+		char temp='n';
+		System.out.println("ASCII code of "+n+" is "+temp);
+	}
+}

@@ -1,0 +1,13 @@
+public class Test_Buffer {
+	static void test(StringBuffer sb) {
+		synchronized (sb) {
+			sb.append(" Giri");
+		}
+	}
+	public static void main(String[] args) {
+		StringBuffer sbb=new StringBuffer("Tophan ");
+		System.out.println(sbb);
+		test(sbb);
+		System.out.println(sbb);
+	}
+}

@@ -1,0 +1,17 @@
+public  class Test_Buffer implements Runnable{
+	static void test(StringBuffer sb) {
+		synchronized (sb) {
+			sb.append(" Giri");
+		}
+	}
+	
+	@Override
+	public void run() {
+		this.test(null);
+	}
+	public static void main(String[] args) {
+		Test_Buffer tb=new Test_Buffer();
+		Thread t1=new Thread(tb);
+		t1.start();
+	}
+}
